@@ -1,18 +1,73 @@
-[gd_scene load_steps=2 format=3 uid="uid://pp6mi6priwlw"]
+[gd_scene load_steps=10 format=3 uid="uid://pp6mi6priwlw"]
 
-[ext_resource type="Texture2D" uid="uid://c33ywv7oektkh" path="res://assets/Grassy_Mountains_Parallax_Background-vnitti/Grassy_Mountains_preview_fullcolor.png" id="1_a6xen"]
+[ext_resource type="Texture2D" uid="uid://3x1xu7gsciah" path="res://assets/character idle animationfn1.png" id="2_a2cjf"]
 
-[node name="Game" type="Node2D"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rg8q"]
+atlas = ExtResource("2_a2cjf")
+region = Rect2(33, 0, 110, 203)
 
-[node name="TextureRect" type="TextureRect" parent="."]
-texture_filter = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1.0
-offset_top = -1.0
-offset_right = 1153.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_a6xen")
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdihm"]
+atlas = ExtResource("2_a2cjf")
+region = Rect2(143, 0, 110, 203)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2j8ps"]
+atlas = ExtResource("2_a2cjf")
+region = Rect2(253, 0, 110, 203)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6vub"]
+atlas = ExtResource("2_a2cjf")
+region = Rect2(363, 0, 110, 203)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_av71a"]
+atlas = ExtResource("2_a2cjf")
+region = Rect2(473, 0, 110, 203)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7re57"]
+atlas = ExtResource("2_a2cjf")
+region = Rect2(583, 0, 110, 203)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fewul"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rg8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdihm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2j8ps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6vub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_av71a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7re57")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nq55o"]
+radius = 27.0
+height = 114.0
+
+[node name="Player" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-7, -65)
+sprite_frames = SubResource("SpriteFrames_fewul")
+animation = &"Idle"
+autoplay = "Idle"
+frame = 3
+frame_progress = 0.69303
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -56)
+shape = SubResource("CapsuleShape2D_nq55o")
