@@ -23,9 +23,9 @@ func _physics_process(delta):
 	
 	# Flip the sprite
 	if direction > 0:
-		animated_sprite.flip.h = false
+		animated_sprite.flip_h = false
 	elif direction < 0:
-		animated_sprite.flip.h = true
+		animated_sprite.flip_h = true
 	
 	# Apply movement
 	if direction:
