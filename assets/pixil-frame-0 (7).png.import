@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3x1xu7gsciah"
-path="res://.godot/imported/character idle animationfn1.png-552a87365272a84b8b24abc958eb8334.ctex"
+uid="uid://dnapvttyifted"
+path="res://.godot/imported/pixil-frame-0 (7).png-91ef1fd822da99ade76fa017566da87b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character idle animationfn1.png"
-dest_files=["res://.godot/imported/character idle animationfn1.png-552a87365272a84b8b24abc958eb8334.ctex"]
+source_file="res://assets/pixil-frame-0 (7).png"
+dest_files=["res://.godot/imported/pixil-frame-0 (7).png-91ef1fd822da99ade76fa017566da87b.ctex"]
 
 [params]
 
