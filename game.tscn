@@ -7,27 +7,22 @@
 
 [node name="Game" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-texture_filter = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1.0
-offset_top = -1.0
-offset_right = 1153.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="GrassyMountainsPreviewFullcolor" type="Sprite2D" parent="."]
+position = Vector2(1787, 513)
+scale = Vector2(9.2963, 9.2963)
 texture = ExtResource("1_8ricd")
 
 [node name="Player" parent="." instance=ExtResource("2_xbv3x")]
-position = Vector2(253, 257)
+position = Vector2(242, 442)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(271, 184)
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-2, -5)
+zoom = Vector2(0.6, 0.6)
+position_smoothing_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(271, 331)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-32, 132)
 shape = SubResource("WorldBoundaryShape2D_t7da2")
