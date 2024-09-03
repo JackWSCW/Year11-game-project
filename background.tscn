@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm03xk2wp1i7b"]
+
+[ext_resource type="Texture2D" uid="uid://c33ywv7oektkh" path="res://assets/Grassy_Mountains_Parallax_Background-vnitti/Grassy_Mountains_preview_fullcolor.png" id="1_4wtog"]
+
+[node name="Background" type="Node2D"]
+
+[node name="GrassyMountainsPreviewFullcolor" type="Sprite2D" parent="."]
+position = Vector2(2395, 310)
+scale = Vector2(12.5046, 12.5046)
+texture = ExtResource("1_4wtog")
+
+[node name="GrassyMountainsPreviewFullcolor2" type="Sprite2D" parent="."]
+position = Vector2(-2401, 309)
+scale = Vector2(12.5046, 12.5046)
+texture = ExtResource("1_4wtog")
+
+[node name="GrassyMountainsPreviewFullcolor3" type="Sprite2D" parent="."]
+position = Vector2(7190, 310)
+scale = Vector2(12.5046, 12.5046)
+texture = ExtResource("1_4wtog")

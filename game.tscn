@@ -1,11 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cs65nya6o7r"]
+[gd_scene load_steps=5 format=3 uid="uid://cs65nya6o7r"]
 
-[ext_resource type="Texture2D" uid="uid://c33ywv7oektkh" path="res://assets/Grassy_Mountains_Parallax_Background-vnitti/Grassy_Mountains_preview_fullcolor.png" id="1_8ricd"]
 [ext_resource type="PackedScene" uid="uid://cwm5ogmqydr43" path="res://player.tscn" id="2_xbv3x"]
 [ext_resource type="Texture2D" uid="uid://br02fx0iqx1x7" path="res://assets/pixil-frame-0 (9).png" id="3_fimve"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fd3yp"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cj4ne"]
 texture = ExtResource("3_fimve")
+margins = Vector2i(7, 0)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -30713,36 +30713,20 @@ texture = ExtResource("3_fimve")
 197:199/0 = 0
 198:199/0 = 0
 199:199/0 = 0
-92:104/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_oq3xl"]
-sources/0 = SubResource("TileSetAtlasSource_fd3yp")
+[sub_resource type="TileSet" id="TileSet_vw0gg"]
+sources/0 = SubResource("TileSetAtlasSource_cj4ne")
 
 [node name="Game" type="Node2D"]
 
-[node name="GrassyMountainsPreviewFullcolor" type="Sprite2D" parent="."]
-position = Vector2(2395, 589)
-scale = Vector2(12.5046, 12.5046)
-texture = ExtResource("1_8ricd")
-
-[node name="GrassyMountainsPreviewFullcolor2" type="Sprite2D" parent="."]
-position = Vector2(-2401, 589)
-scale = Vector2(12.5046, 12.5046)
-texture = ExtResource("1_8ricd")
-
-[node name="GrassyMountainsPreviewFullcolor3" type="Sprite2D" parent="."]
-position = Vector2(7190, 589)
-scale = Vector2(12.5046, 12.5046)
-texture = ExtResource("1_8ricd")
-
 [node name="Player" parent="." instance=ExtResource("2_xbv3x")]
-position = Vector2(242, 442)
+position = Vector2(44, 61)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(16, -41)
+position = Vector2(48, -28)
 zoom = Vector2(0.6, 0.6)
 position_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_oq3xl")
+tile_set = SubResource("TileSet_vw0gg")
 format = 2
