@@ -4,17 +4,17 @@
 
 [node name="Background" type="Node2D"]
 
-[node name="GrassyMountainsPreviewFullcolor" type="Sprite2D" parent="."]
-position = Vector2(2395, 310)
-scale = Vector2(12.5046, 12.5046)
-texture = ExtResource("1_4wtog")
-
 [node name="GrassyMountainsPreviewFullcolor2" type="Sprite2D" parent="."]
-position = Vector2(-2401, 309)
-scale = Vector2(12.5046, 12.5046)
+position = Vector2(-1302, 756)
+scale = Vector2(6.78008, 6.78008)
 texture = ExtResource("1_4wtog")
 
 [node name="GrassyMountainsPreviewFullcolor3" type="Sprite2D" parent="."]
-position = Vector2(7190, 310)
-scale = Vector2(12.5046, 12.5046)
+position = Vector2(1300, 756)
+scale = Vector2(6.78008, 6.78008)
+texture = ExtResource("1_4wtog")
+
+[node name="GrassyMountainsPreviewFullcolor4" type="Sprite2D" parent="."]
+position = Vector2(3897, 755)
+scale = Vector2(6.78008, 6.78008)
 texture = ExtResource("1_4wtog")
