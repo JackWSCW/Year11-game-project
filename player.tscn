@@ -79,8 +79,8 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jufmo"]
-radius = 3.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ohlek"]
+radius = 4.0
 height = 14.0
 
 [node name="Player" type="CharacterBody2D"]
@@ -88,7 +88,7 @@ collision_layer = 2
 script = ExtResource("1_rocht")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(38, -4)
+position = Vector2(36, -4)
 scale = Vector2(0.0100369, 0.0100369)
 sprite_frames = SubResource("SpriteFrames_dyfrj")
 animation = &"Idle"
@@ -97,5 +97,5 @@ frame = 1
 frame_progress = 0.319053
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(38, -3)
-shape = SubResource("CapsuleShape2D_jufmo")
+position = Vector2(36, -4)
+shape = SubResource("CapsuleShape2D_ohlek")
