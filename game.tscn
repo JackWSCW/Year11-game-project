@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cs65nya6o7r"]
+[gd_scene load_steps=10 format=3 uid="uid://cs65nya6o7r"]
 
 [ext_resource type="Texture2D" uid="uid://7onehbgbt8fb" path="res://assets/pixilart-drawing.png" id="2_2lsem"]
 [ext_resource type="PackedScene" uid="uid://cwm5ogmqydr43" path="res://player.tscn" id="2_xbv3x"]
 [ext_resource type="PackedScene" uid="uid://bi6mgd23d1f8d" path="res://killzone2.tscn" id="3_nr7q5"]
 [ext_resource type="PackedScene" uid="uid://co70bo5x0beos" path="res://bigtree.tscn" id="4_14168"]
+[ext_resource type="Texture2D" uid="uid://ffa81qay6cr" path="res://assets/Grassy_Mountains_Parallax_Background-vnitti/layers/far_mountains.png" id="5_0jwgp"]
+[ext_resource type="Texture2D" uid="uid://obcy1k8rh8c0" path="res://assets/Grassy_Mountains_Parallax_Background-vnitti/layers/sky.png" id="5_u8edm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tv8hn"]
 texture = ExtResource("2_2lsem")
@@ -166,3 +168,22 @@ shape = SubResource("WorldBoundaryShape2D_mv68c")
 
 [node name="Bigtree" parent="." instance=ExtResource("4_14168")]
 position = Vector2(4976, -416)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="layer1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(384, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/layer1"]
+position = Vector2(120, 48)
+scale = Vector2(4, 6)
+texture = ExtResource("5_u8edm")
+
+[node name="layer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(324, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/layer2"]
+position = Vector2(120, 198)
+scale = Vector2(4, 6)
+texture = ExtResource("5_0jwgp")

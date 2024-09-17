@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="Year 11-game-project"
-run/main_scene="res://game.tscn"
+run/main_scene="res://gameintro.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=3000
 
 [input]
 
