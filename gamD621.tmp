@@ -1,25 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://cs65nya6o7r"]
 
+[ext_resource type="Script" path="res://pausemenu.gd" id="1_m3t3y"]
 [ext_resource type="Texture2D" uid="uid://7onehbgbt8fb" path="res://assets/pixilart-drawing.png" id="2_2lsem"]
 [ext_resource type="PackedScene" uid="uid://cwm5ogmqydr43" path="res://player.tscn" id="2_xbv3x"]
 [ext_resource type="PackedScene" uid="uid://bi6mgd23d1f8d" path="res://killzone2.tscn" id="3_nr7q5"]
 [ext_resource type="PackedScene" uid="uid://co70bo5x0beos" path="res://bigtree.tscn" id="4_14168"]
-
-[sub_resource type="GDScript" id="GDScript_08rhy"]
-script/source = "extends Node2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
-"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tv8hn"]
 texture = ExtResource("2_2lsem")
@@ -157,7 +142,7 @@ sources/0 = SubResource("TileSetAtlasSource_tv8hn")
 distance = -41.0
 
 [node name="Game" type="Node2D"]
-script = SubResource("GDScript_08rhy")
+script = ExtResource("1_m3t3y")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_nak70")
