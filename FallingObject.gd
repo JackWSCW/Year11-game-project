@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-@export var fall_key: String = "f"  # Key to trigger the fall
+@export var fall_key: String = "Space"  # Key to trigger the fall
 var player_in_range = false  # Track if the player is within the range
 
 func _ready():
