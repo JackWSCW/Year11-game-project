@@ -78,6 +78,14 @@ theme_override_fonts/font = SubResource("SystemFont_x6pi6")
 theme_override_font_sizes/font_size = 24
 text = "Start Game"
 
+[node name="Exit_Button2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_x6pi6")
+theme_override_font_sizes/font_size = 24
+text = "Settings
+"
+
 [node name="Exit_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
